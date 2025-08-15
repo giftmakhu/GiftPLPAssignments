@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>enhanced-form.html</title>
+  <meta name="description" content="Enhanced HTML5 form example with lists, tables, and media.">
+</head>
+<body>
+  <header>
+    <h1>Enhanced HTML5 Form Example</h1>
+    <nav>
+      <ul>
+        <li><a href="#info">Information</a></li>
+        <li><a href="#table">Data Table</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#form">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="info">
+      <h2>Information List</h2>
+      <ul>
+        <li>HTML5 Semantic Tags</li>
+        <li>Accessible Layout</li>
+        <li>Form Validation</li>
+      </ul>
+    </section>
+
+    <section id="table">
+      <h2>Sample Data Table</h2>
+      <table border="1" cellpadding="5" cellspacing="0">
+        <caption>User Information Summary</caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gift Makhuvele</td>
+            <td>giftmakhuvele8@gmail.com</td>
+            <td>Beginner Software Engineer</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="media">
+      <h2>Media Content</h2>
+      <figure>
+        <img src="https://www.educative.io/static/imgs/logos/logoMarkv2.png alt="Beauty">
+        <figcaption>Beauty</figcaption>
+      </figure>
+    </section>
+
+    <section id="form">
+      <h2>Contact Form</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required autocomplete="name">
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+        </p>
+        <p>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter password" required>
+        </p>
+        <p>
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+        </p>
+        <p>
+          <label for="role">Role:</label>
+          <select id="role" name="role" required>
+            <option value="">--Please choose an option--</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="tester">Tester</option>
+          </select>
+        </p>
+        <p>
+          <label>Preferred Contact Method:</label>
+          <input type="radio" id="contact-email" name="contact-method" value="email" required>
+          <label for="contact-email">Email</label>
+          <input type="radio" id="contact-phone" name="contact-method" value="phone">
+          <label for="contact-phone">Phone</label>
+        </p>
+        <p>
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" placeholder="About yourself" rows="4" cols="40" required></textarea>
+        </p>
+       
+        <p>
+          <label>
+            <input type="checkbox" name="terms" required> Please agree to the terms and conditions
+          </label>
+        </p>
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
